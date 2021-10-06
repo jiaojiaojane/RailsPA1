@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Courses</h1>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      Code
+    </div>
+    <div class="col-4">
+      Description
+    </div>
+    <div class="col">
+      Independent Study
+    </div>
+    <div class="col">
+      Name
+    </div>
+    <div class="col">
+      Subjects
+    </div>
+    <div class='col'>
+    </div>
+    <div class='col'>
+    </div>
+    <div class='col'>
+    </div>
+  <% @courses.each do |course| %>
+    <div class="row">
+      <div class="col">
+        <%= course.code %>
+      </div>
+      <div class="col-4">
+        <%= course.description %>
+      </div>
+      <div class="col">
+        <%= course.independent_study %>
+      </div>
+      <div class="col">
+        <%= course.name %>
+      </div>
+      <div class="col">
+        <%= course.subjects %>
+      </div>
+      <div class="col">
+        <%= link_to 'Show', course %>
+      </div>
+      <div class="col">
+        <%= link_to 'Edit', edit_course_path(course) %>
+      </div>
+      <div class="col">
+        <%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
+
+
+<br>
+
+<%= link_to 'New Course', new_course_path %>
