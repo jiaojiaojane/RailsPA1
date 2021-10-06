@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##This app design to show the categories of courses and instructors in brandeis
 
-Things you may want to cover:
+#Used bootstrap for navbar, and the grid of the course page. I didn't modify on the instructor pag as I think it looks pretty neat without bootstrap. 
 
-* Ruby version
+#github: https://github.com/jiaojiaojane/RailsPA1
+#heroku: https://afternoon-savannah-13823.herokuapp.com
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
